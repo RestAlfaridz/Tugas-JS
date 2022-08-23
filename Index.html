@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+ var r;
+
+
+function tambah(){
+    var n1 = parseInt (kalkulator.n1.value);
+    var n2 = parseInt (kalkulator.n2.value);
+    r=(n1+n2);
+    kalkulator.hasil.value = r;
+}
+function kurang(){
+    var n1 = parseInt (kalkulator.n1.value);
+    var n2 = parseInt (kalkulator.n2.value);
+    r=(n1-n2);
+    kalkulator.hasil.value = r;
+}
+function kali(){
+    var n1 = parseInt (kalkulator.n1.value);
+    var n2 = parseInt (kalkulator.n2.value);
+    r=(n1*n2);
+    kalkulator.hasil.value = r;
+}
+function bagi(){
+    var n1 = parseInt (kalkulator.n1.value);
+    var n2 = parseInt (kalkulator.n2.value);
+    r=(n1/n2);
+    kalkulator.hasil.value = r;
+}
+</script>
+<body>
+    <form method="post" name="kalkulator">
+    <input type="text" name="n1" placeholder="bilangan 1">
+    <input type="text" name="n2" placeholder="bilangan 2">
+    <input type="text" name="hasil" value="" placeholder="hasil">
+    <input type="button" value="+" name="jumlah" onclick=tambah()>
+    <input type="button" value="-" name="jumlah" onclick=kurang()>
+    <input type="button" value="*" name="jumlah" onclick=kali()>
+    <input type="button" value="/" name="jumlah" onclick=bagi()>
+</form>
+</body>
+</html>
